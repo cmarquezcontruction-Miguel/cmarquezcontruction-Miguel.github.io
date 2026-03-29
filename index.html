@@ -1,69 +1,135 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>C Marquez Construction</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C Marquez Construction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header h2 {
+      font-weight: normal;
+      margin-top: 10px;
+    }
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      padding: 20px 30px;
+      font-size: 20px;
+      text-decoration: none;
+      border-radius: 10px;
+      display: inline-block;
+      margin: 20px 0;
+      transition: transform 0.2s;
+    }
+    .whatsapp-btn:hover {
+      transform: scale(1.05);
+    }
+    form {
+      background-color: white;
+      padding: 30px 20px;
+      margin: 20px auto;
+      display: inline-block;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 500px;
+      text-align: left;
+    }
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    form button {
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      transition: transform 0.2s;
+    }
+    form button:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      margin: 20px 0;
+      font-size: 18px;
+    }
+    footer b {
+      color: #0077b6;
+    }
+  </style>
 </head>
+<body>
 
-<body style="font-family: Arial; text-align:center;">
+<header>
+  <h1>🏗️ C MARQUEZ CONSTRUCTION</h1>
+  <h2>Solicitar Cotización Gratis</h2>
+  <p><b>Servicio en San Miguel</b></p>
+</header>
 
-<h1>🏗️ C MARQUEZ CONSTRUCTION</h1>
-
-<h2>Solicitar Cotización Gratis</h2>
-
-<p><b>Servicio en San Miguel</b></p>
-
-<br>
-
-<a href="https://wa.me/50372899749?text=Hola%20quiero%20una%20cotizacion"
-style="background-color:#25D366;
-color:white;
-padding:20px;
-font-size:22px;
-text-decoration:none;
-border-radius:10px;
-display:inline-block;">
-📲 SOLICITAR COTIZACIÓN POR WHATSAPP
+<a href="https://wa.me/50372899749?text=Hola%20quiero%20una%20cotizacion" class="whatsapp-btn">
+  📲 SOLICITAR COTIZACIÓN POR WHATSAPP
 </a>
-
-<br><br>
 
 <h3>O llena el formulario:</h3>
 
-<form>
+<form action="https://tu-servidor.com/recibir" method="post">
+  <label>Nombre:</label>
+  <input type="text" name="nombre" required>
 
-<label>Nombre:</label><br>
-<input type="text"><br><br>
+  <label>Teléfono:</label>
+  <input type="text" name="telefono" required>
 
-<label>Teléfono:</label><br>
-<input type="text"><br><br>
+  <label>Tipo de trabajo:</label>
+  <select name="tipo_trabajo" required>
+    <option value="">Selecciona...</option>
+    <option>Baño</option>
+    <option>Cocina</option>
+    <option>Piso</option>
+    <option>Muro</option>
+    <option>Remodelación</option>
+    <option>Casa completa</option>
+  </select>
 
-<label>Tipo de trabajo:</label><br>
-<select>
-<option>Baño</option>
-<option>Cocina</option>
-<option>Piso</option>
-<option>Muro</option>
-<option>Remodelación</option>
-<option>Casa completa</option>
-</select>
+  <label>Explique el trabajo:</label>
+  <textarea name="descripcion" rows="4" required></textarea>
 
-<br><br>
-
-<label>Explique el trabajo:</label><br>
-<textarea rows="4" cols="40"></textarea>
-
-<br><br>
-
-<button>Enviar Solicitud</button>
-
+  <button type="submit">Enviar Solicitud</button>
 </form>
 
-<br>
-
-<p><b>📞 WhatsApp: 7289-9749</b></p>
-
-<p>💬 Cotización GRATIS</p>
+<footer>
+  <p><b>📞 WhatsApp: 7289-9749</b></p>
+  <p>💬 Cotización GRATIS</p>
+</footer>
 
 </body>
 </html>
