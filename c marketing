@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C Marquez Construction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f7f7f7;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 15px 25px;
+      background-color: #25D366; /* verde WhatsApp */
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: all 0.2s;
+    }
+
+    .whatsapp-btn:hover {
+      transform: scale(1.05);
+      background-color: #1ebe57;
+    }
+
+    form {
+      background-color: white;
+      padding: 30px 20px;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 500px;
+      text-align: left;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    form button {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      transition: all 0.2s;
+      font-weight: bold;
+    }
+
+    form button:hover {
+      background-color: #1ebe57;
+      transform: scale(1.03);
+    }
+
+    footer {
+      margin: 30px 0;
+      font-size: 18px;
+    }
+
+    footer b {
+      color: #0077b6;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🏗️ C MARQUEZ CONSTRUCTION</h1>
+  <p>Servicio en San Miguel - Cotización GRATIS</p>
+</header>
+
+<!-- Botón verde de WhatsApp -->
+<a href="https://wa.me/50372899749?text=Hola%20quiero%20una%20cotizacion" class="whatsapp-btn">
+  📲 SOLICITAR COTIZACIÓN POR WHATSAPP
+</a>
+
+<h3>O llena el formulario:</h3>
+
+<form action="https://tu-servidor.com/recibir" method="post">
+  <label>Nombre:</label>
+  <input type="text" name="nombre" required>
+
+  <label>Teléfono:</label>
+  <input type="text" name="telefono" required>
+
+  <label>Tipo de trabajo:</label>
+  <select name="tipo_trabajo" required>
+    <option value="">Selecciona...</option>
+    <option>Baño</option>
+    <option>Cocina</option>
+    <option>Piso</option>
+    <option>Muro</option>
+    <option>Remodelación</option>
+    <option>Casa completa</option>
+  </select>
+
+  <label>Explique el trabajo:</label>
+  <textarea name="descripcion" rows="4" required></textarea>
+
+  <button type="submit">Enviar Solicitud</button>
+</form>
+
+<footer>
+  <p><b>📞 WhatsApp: 7289-9749</b></p>
+  <p>💬 Cotización GRATIS</p>
+</footer>
+
+</body>
+</html>
